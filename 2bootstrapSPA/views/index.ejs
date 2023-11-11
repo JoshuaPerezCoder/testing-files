@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <style>
+      .portfolio-box img {
+        width: 100%;
+        height: 200px;
+      }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HW 4 CIS 3368</title>
+    <!-- Adding incliude page -->
+    <% include ./include/inc-top %>
+
+  </head>
+
+  <body id="page-top">
+   
+    <!-- Navigation -->
+    <% include ./include/inc-nav %>
+    
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Burger Mart</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Houston's Favorite Burgershop for all your favorite burger and shake combos</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">We've got fresh grilled burgers ready!</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">We've been around since 1985 serving up the best burgers in Houston. Our journey started in Houston as a small shack that aspired to serve the best quality burger in the area. Our Founder ,Mark Grayson, wanted to bring the citizens of Houston together with the same great food he made with his father. It is now our mission to bring communities together with a great meal that brings smiles from satisfaction. We started out with one simple burger that had a great taste, from there people have come to us time and time again to savor one of Houston's best burger places. We strive to serve only the best quality of beef and use our knowledge of seasoning to enhance every bite of flavor that our fans come back for. </p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="/resources/img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="/resources/img/portfolio/thumbnails/1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Item 1
+                  </div>
+                  <div class="project-name">
+                    BurgerMart Burger
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="/resources/img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="/resources/img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Item 2
+                  </div>
+                  <div class="project-name">
+                    BurgerMart Double Cheeseburger
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="/resources/img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="/resources/img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Item 3
+                  </div>
+                  <div class="project-name">
+                    Burger Mart Double Cheeseburger
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Payment</h2>
+                <hr class="my-4">
+              </div>
+            </div>
+          </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10">
+            <p>Please fill in information below to place an order</p>
+            <form name="sentMessage" id="contactForm" novalidate action="/send-message" method="post">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>First Name</label>
+                  <input name="name" type="text" class="form-control" placeholder="First Name" id="fname" required data-validation-required-message="First Name">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Last Name</label>
+                  <input name="name" type="text" class="form-control" placeholder="Last Name" id="lname" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Email Address</label>
+                  <input name="email" type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                  <label>Credit Card Number</label>
+                  <input name="cardname" type="text" class="form-control" placeholder="1234 5678 9101 1121" id="lname" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-instagram text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Instagram</h3>
+              <p class="text-muted mb-0">BurgerMart_1983</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-facebook text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Facebook</h3>
+              <p class="text-muted mb-0">BurgerMart</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-twitter text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Twitter</h3>
+              <p class="text-muted mb-0">@BurgerMart1983</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Add include page -->
+    <% include ./include/inc-footer %>
+  </body>
+</html>
